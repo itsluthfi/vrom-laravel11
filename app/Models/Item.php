@@ -35,7 +35,7 @@ class Item extends Model
             return Storage::url(json_decode($this->photos)[0]);
         }
 
-        return asset('images/default.png');
+        return asset('https://via.placeholder.com/800x600');
     }
 
     public function type()
