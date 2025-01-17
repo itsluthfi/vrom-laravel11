@@ -98,7 +98,7 @@
                             <p class="text-sm font-normal text-secondary">
                                 {{ $item->type ? $item->type->name : '-' }}
                             </p>
-                            <a href="./details.html" class="absolute inset-0"></a>
+                            <a href="{{ route('front.detail', $item->slug) }}" class="absolute inset-0"></a>
                         </div>
                         <img src="{{ $item->thumbnail }}" class="rounded-[18px] min-w-[216px] w-full h-[150px]"
                             alt="">
